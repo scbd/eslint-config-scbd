@@ -10,6 +10,8 @@ module.exports = {
     'array-bracket-spacing'              : ['error', 'always', {arraysInArrays:false, objectsInArrays:false}],
     'no-plusplus'                        : ['off'],
     'no-use-before-define'               : ['error', { 'functions': false, 'classes': false }],
-    'no-underscore-dangle'               : ['error', { "allow": ["_id" ] }] // <<< MongoDB Ids (_id) fix
+    'no-underscore-dangle'               : ['error', { "allow": ["_id" ] }], // <<< MongoDB Ids (_id) fix
+    "no-use-before-define": ["error", { "functions": true, "classes": true, "namedExports": false }]
+    
   }
 };
