@@ -11,7 +11,11 @@ module.exports = {
     'no-plusplus'                        : ['off'],
     'no-use-before-define'               : ['error', { 'functions': false, 'classes': false }],
     'no-underscore-dangle'               : ['error', { "allow": ["_id" ] }], // <<< MongoDB Ids (_id) fix
-    "no-use-before-define": ["error", { "functions": true, "classes": true, "namedExports": false }]
-    
+    "no-use-before-define": ["error", { "functions": true, "classes": true, "namedExports": false }],
+    'no-restricted-syntax': [  // allow use of forOf and forIn loops
+      'error',
+      'LabeledStatement',
+      'WithStatement',
+    ],
   }
 };
